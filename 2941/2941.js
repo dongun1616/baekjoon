@@ -9,4 +9,5 @@ function solution(input) {
     return input.length; // return input일 경우 QeQQak를 반환한다.
 }
 
+
 console.log(solution(input));
