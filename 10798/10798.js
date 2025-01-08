@@ -22,4 +22,5 @@ let input = [
     'P5h3kx'
 ]
 
+
 console.log(solution(input))
