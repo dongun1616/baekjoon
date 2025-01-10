@@ -4,4 +4,5 @@ function MenOfPassion(A = [], n) {
     return A[i]; // O(1)
 }
 
+
 console.log('n')
