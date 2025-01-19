@@ -16,4 +16,5 @@ function solution(arr) {
 
     return [avg, arr[mid]]
 }
+
 console.log(solution([30, 40, 10, 30, 60]))
