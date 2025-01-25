@@ -15,7 +15,6 @@ function solution(input) {
     const result = members.map(member => `${member.age} ${member.name}`).join('\n');
     return result;
 }
-
 // 테스트
 const input = `3
 21 Junkyu
