@@ -30,6 +30,7 @@ function solution(input) {
     // 결과를 공백으로 구분하여 출력
     return result.join(' ');
 }
+
 // 테스트
 const input = `5
 6 3 2 10 -10
