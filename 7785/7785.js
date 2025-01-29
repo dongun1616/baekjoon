@@ -1,27 +1,27 @@
 //해시
 //회사에 있는 사람을 반환하는 함수
-function solution(data) {
-    const input = data.split("\n");
-    const N = Number(input.splice(0, 1).join(""));
-    let set = new Set();
-    for (let i = 0; i < N; i++) {
-        const [name, state] = input[i].split(" ");
-        if (state === "enter") {
-            set.add(name);
+function solution(n, records) {
+    let employees = new Map();
+
+    records.forEach(record => {
+        const [name, action] = record.split(' ');
+        if (action === "enter") {
+            employees.set(name, true);
+        } else if (action === "leave") {
+            employees.delete(name);
         }
-        if (state === "leave") {
-            set.delete(name);
-        }
-    }
-    let answer = [...set].sort();
-    answer.reverse();
-    return answer.join("\n");
+    });
+
+    return Array.from(employees.keys()).sort().reverse().join("\n");
 }
 
-const case1 = `4
-  Baha enter
-  Askar enter
-  Baha leave
-  Artem enter`;
+// 예제 입력
+const n = 4;
+const records = [
+    "Baha enter",
+    "Askar enter",
+    "Baha leave",
+    "Artem enter"
+];
 
-console.log(solution(case1));
+console.log(solution(n, records));
