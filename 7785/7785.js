@@ -14,7 +14,6 @@ function solution(n, records) {
 
     return Array.from(employees.keys()).sort().reverse().join("\n");
 }
-
 // 예제 입력
 const n = 4;
 const records = [
