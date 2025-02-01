@@ -10,7 +10,6 @@ function solution(arr1, arr2) {
     //해당 타겟 배열 숫자의 빈도수 출력
     return arr2.map(target => frequencyCounter[target] || 0).join(" ");;
 }
-
 let input1 = [6, 3, 2, 10, 10, 10, -10, -10, 7, 3]
 let input2 = [10, 9, -5, 2, 3, 4, 5, -10]
 
