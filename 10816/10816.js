@@ -3,7 +3,7 @@
 function solution(arr1, arr2) {
     // 각 배열의 값들을 카운팅할 객체 생성
     let frequencyCounter = {};
-    // arr2의 각 요소를 카운팅 
+    // arr1의 각 요소를 카운팅 
     for (let val of arr1) {
         frequencyCounter[val] = (frequencyCounter[val] || 0) + 1;
     }
