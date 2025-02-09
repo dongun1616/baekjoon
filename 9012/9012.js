@@ -20,6 +20,7 @@ function isValidParentheses(s) {
 
     return stack.length === 0;
 }
+
 // 테스트 실행
 let input = [
     '(())())',
